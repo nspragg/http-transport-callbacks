@@ -1,0 +1,84 @@
+{
+  "name": "http-transport-callbacks",
+  "version": "1.0.0",
+  "description": "Support callbacks.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "jsdoc": "jsdoc -c ./docconfig/jsdoc.json",
+    "lint": "eslint ./src ./test",
+    "coverage": "istanbul cover _mocha -- -R dot",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nspragg/http-transport-callbacks.git"
+  },
+  "keywords": [
+    "https",
+    "http",
+    "rest client",
+    "http-transport-callbacks",
+    "http-transport",
+    "error",
+    "response code",
+    "rest",
+    "json",
+    "convert"
+  ],
+  "author": "Nick Spragg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nspragg/http-transport-callbacks/issues"
+  },
+  "homepage": "https://github.com/nspragg/http-transport-callbacks#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "codeclimate-test-reporter": "^0.4.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^3.11.1",
+    "istanbul": "^0.4.2",
+    "jsdoc": "^3.4.3",
+    "lodash": "^4.17.4",
+    "mocha": "^3.0.2",
+    "nock": "^9.0.4",
+    "sinon": "^1.15.3"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ],
+      "eqeqeq": 2,
+      "no-var": 2,
+      "one-var": [
+        2,
+        "never"
+      ],
+      "prefer-const": 2,
+      "semi": 2,
+      "strict": [
+        2,
+        "global"
+      ],
+      "arrow-parens": 2,
+      "prefer-arrow-callback": 2
+    }
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "http-transport-to-error": "git+https://git@github.com/nspragg/http-transport-to-error.git",
+    "http-transport": "git+https://git@github.com/nspragg/http-transport.git"
+  }
+}
