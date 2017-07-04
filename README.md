@@ -12,7 +12,7 @@ npm install --save http-transport-callbacks
 
 ## Usage
 
-Add callback support using default HTTP transport:
+Callback support using default HTTP transport:
 ```js
 
 const HttpTransport = require('http-transport-callbacks');
