@@ -15,7 +15,7 @@ npm install --save http-transport-callbacks
 Callback support using to HTTP transport:
 ```js
 
-const HttpTransport = require('http-transport-callbacks');
+const HttpTransport = require('@bbc/http-transport-callbacks');
 
 HttpTransport.createClient()
    .get('http://example.com')
